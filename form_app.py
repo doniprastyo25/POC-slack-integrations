@@ -3,7 +3,7 @@ import requests
 import datetime
 from flask import Flask, request
 from slack_bolt import App
-slack_token = 'xoxe.xoxp-1-Mi0yLTUzODUzMDExNDExMzgtNTM3ODY0NDAxNTE3NC01NDA5NzQzMDc5NTIwLTUzNzkzODE3MDAxMTgtNjQ3MmZiZjViMzBhOGMyNzU1NzZiN2Y2ZjJhMTVmZTdlZDM5YmQ4YzllNmI5NzVhZTAxOTMzODViNTc3ZjE0Ng'
+slack_token = 'slack_access_token'
 app = Flask(__name__)
 import json
 
@@ -20,7 +20,7 @@ def hello_world():
 def hit_form():
     date_now = datetime.datetime.now()
     str_date = date_now.strftime("%d %B, %Y")
-    url = 'https://hooks.slack.com/services/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'
+    url = 'incoming_webhook_url'
     payload = {
             'blocks': open_json()
     }
