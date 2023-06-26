@@ -8,13 +8,10 @@ from flask import Flask, request, jsonify, make_response
 app = Flask(__name__)
 
 SLACK_API_URL = "https://slack.com/api/views.open"
-SLACK_BOT_TOKEN = "xoxb-5385301141138-5386296991170-Wn2VqQZAGWTHIA4HWzt7JvO7"
+SLACK_BOT_TOKEN = "slack_bot_token_oauth&permission"
 # SLACK_ACCESS_TOKEN = "xoxe.xoxp-1-Mi0yLTUzODUzMDExNDExMzgtNTM3ODY0NDAxNTE3NC01NDA5NzQzMDc5NTIwLTU0NzQ4Nzk3NzU2NTItZDc3OGI4MDYyMTBkNmQzODRlMzFlNDYzMDNkNGMwMjhmZTgzOWFlMzU5NTNmMGI3NzA0ODhhMjYxNjgzNzYyNA"
 url_list = [
-    'https://hooks.slack.com/services/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',
-    'https://hooks.slack.com/services/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',
-    'https://hooks.slack.com/services/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',
-    'https://hooks.slack.com/services/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'
+    'incoming_webhook_url_list',
     ]
 
 def build_payload(type_form):
@@ -33,7 +30,7 @@ def hello_world():
 
 @app.route('/send-alert')
 def send_interactive_message():
-    url = 'https://hooks.slack.com/services/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'
+    url = 'incoming_webhook_url'
     data_payload = build_payload('form_performance')
     payload = adjust_date(data_payload)
     response = requests.post(url, json=payload)
