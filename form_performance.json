@@ -1,0 +1,59 @@
+{
+	"blocks": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "Form Performance",
+				"emoji": true
+			}
+		},
+		{
+			"type": "section",
+			"fields": [
+				{
+					"type": "mrkdwn",
+					"text": "*Type:*\nDaily performance"
+				},
+				{
+					"type": "mrkdwn",
+					"text": "*Created by:*\n<example.com|ITHead@email.com>"
+				}
+			]
+		},
+		{
+			"type": "section",
+			"fields": [
+				{
+					"type": "mrkdwn",
+					"text": "*Date:*\n21 June 2023"
+				}
+			]
+		},
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"emoji": true,
+						"text": "Approve"
+					},
+					"style": "primary",
+					"value": "click_me_123"
+				},
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"emoji": true,
+						"text": "Reject"
+					},
+					"style": "danger",
+					"value": "click_me_123"
+				}
+			]
+		}
+	]
+}

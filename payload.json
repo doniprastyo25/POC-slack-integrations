@@ -1,0 +1,156 @@
+{
+    "view":{
+        "type": "modal",
+        "title": {
+            "type": "plain_text",
+            "text": "Form measurement",
+            "emoji": true
+        },
+        "submit": {
+            "type": "plain_text",
+            "text": "Submit",
+            "emoji": true
+        },
+        "close": {
+            "type": "plain_text",
+            "text": "Cancel",
+            "emoji": true
+        },
+        "blocks": [
+            {
+                "type": "input",
+                "element": {
+                    "type": "email_text_input",
+                    "action_id": "email_text_input-action",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "write your email"
+                    }
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "your working mail",
+                    "emoji": true
+                }
+            },
+            {
+                "type": "input",
+                "element": {
+                    "type": "plain_text_input",
+                    "action_id": "plain_text_input-action",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "How many tickets do you have running backward today?"
+                    }
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "backward ticket*",
+                    "emoji": true
+                }
+            },
+            {
+                "type": "input",
+                "element": {
+                    "type": "plain_text_input",
+                    "action_id": "plain_text_input-action",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "How many tickets do you have going forward (immediately completed status) without going backward today?"
+                    }
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "forward ticket*",
+                    "emoji": true
+                }
+            },
+            {
+                "type": "input",
+                "element": {
+                    "type": "number_input",
+                    "is_decimal_allowed": false,
+                    "action_id": "number_input-action",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "How many to-do lists do you have today?"
+                    }
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "your to-do*",
+                    "emoji": true
+                }
+            },
+            {
+                "type": "input",
+                "element": {
+                    "type": "number_input",
+                    "is_decimal_allowed": false,
+                    "action_id": "number_input-action",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "How many of your unfinished daily to-do lists are today?"
+                    }
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "your unfinished to-do *",
+                    "emoji": true
+                }
+            },
+            {
+                "type": "input",
+                "element": {
+                    "type": "number_input",
+                    "is_decimal_allowed": false,
+                    "action_id": "number_input-action",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "How many times have you been late or don’t attend without confirming the meeting or attendance today?"
+                    }
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "today attendances*",
+                    "emoji": true
+                }
+            },
+            {
+                "type": "input",
+                "element": {
+                    "type": "static_select",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "Select an item",
+                        "emoji": true
+                    },
+                    "options": [
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "Yes",
+                                "emoji": true
+                            },
+                            "value": "Yes"
+                        },
+                        {
+                            "text": {
+                                "type": "plain_text",
+                                "text": "No",
+                                "emoji": true
+                            },
+                            "value": "No"
+                        }
+                    ],
+                    "action_id": "static_select-action"
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "Do you have response times in chats that are more than 15 minutes and more than 5x today?",
+                    "emoji": true
+                }
+            }
+        ]
+    }
+}
